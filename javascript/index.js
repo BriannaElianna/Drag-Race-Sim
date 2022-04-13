@@ -122,6 +122,7 @@ class ActingChallenge {
             desc2[desc2["celebrities."] = 5] = "celebrities.";
             desc2[desc2["the future."] = 6] = "the future.";
             desc2[desc2["the rainbow."] = 7] = "the rainbow.";
+            desc2[desc2["euphoria."] = 7] = "euphoria.";
         })(desc2 || (desc2 = {}));
         description.innerHTML = "The queens will act in a " + desc1[randomNumber(0, 4)] + desc2[randomNumber(0, 6)];
     }
@@ -170,6 +171,7 @@ class ComedyChallenge {
             desc2[desc2["Drag Race."] = 5] = "Drag Race.";
             desc2[desc2["Past Drag Race Contestants."] = 6] = "Past Drag Race Contestants.";
             desc2[desc2["comedy."] = 7] = "comedy.";
+            desc2[desc2["their moms."] = 7] = "their moms.";
         })(desc2 || (desc2 = {}));
         description.innerHTML = "The queens will participate in " + desc1[whatChallengeIs] + desc2[randomNumber(0, 7)];
         if (whatChallengeIs == 0) {
@@ -448,6 +450,7 @@ class Rusical {
             desc[desc["Madonna: The Unauthorized Rusical."] = 15] = "Madonna: The Unauthorized Rusical.";
             desc[desc["Máxima - The Rusical."] = 16] = "Máxima - The Rusical.";
             desc[desc["Rats: The Rusical."] = 17] = "Rats: The Rusical.";
+            desc[desc["Moulin Ru: The Rusical."] = 17] = "Moulin Ru: The Rusical.";
         })(desc || (desc = {}));
         description.innerHTML = "Today's challenge is... THE RUSICAL!! The queens were tasked to take part in " + desc[randomNumber(0, 17)];
     }
@@ -482,6 +485,7 @@ class Ball {
             desc1[desc1["Sweet 16, "] = 4] = "Sweet 16, ";
             desc1[desc1["Black and white, "] = 5] = "Black and white, ";
             desc1[desc1["Winter, "] = 6] = "Winter, ";
+            desc1[desc1["Winter, "] = 6] = "Drippin Diamonds, ";
         })(desc1 || (desc1 = {}));
         let desc2;
         (function (desc2) {
@@ -545,6 +549,7 @@ class Rumix {
             desc1[desc1["This Is Our Country."] = 13] = "This Is Our Country.";
             desc1[desc1["Hey Sis, It's Christmas."] = 14] = "Hey Sis, It's Christmas.";
             desc1[desc1["Queen of the North."] = 15] = "Queen of the North.";
+            desc1[desc1["Catwalk."] = 15] = "Catwalk.";
         })(desc1 || (desc1 = {}));
         description.innerHTML = "Today's challenge is... the rumix! The queens will make a verse and a choreography for " + desc1[randomNumber(0, 15)];
     }
@@ -732,6 +737,7 @@ function runway() {
         desc[desc["fish"] = 19] = "fish";
         desc[desc["butch."] = 20] = "butch.";
         desc[desc["amazon"] = 21] = "amazon";
+        desc[desc["tv culture"] = 21] = "tv culture";
     })(desc || (desc = {}));
     runwayScreen.createParagraph("The queens will bring it to the runway!");
     if (currentCast.length > 4)
@@ -895,7 +901,7 @@ function CheckForSpecialEvents(slay, great, good, bad, flop) {
         slayers = true;
     if (flop.length + bad.length >= 5 && currentCast.length >= 9 && !bottom6WayLipsyncCheck && randomNumber(0, 100) >= 70 && !conjoinedCheck)
         bottom6WayLipsync = true;
-    if (flop.length + bad.length >= 7 && great.length + slay.length + good.length > 0 && !s14LaLaPaRUZaCheck && randomNumber(0, 100) >= 70 && !conjoinedCheck)
+    if (flop.length + bad.length >= 3 && great.length + slay.length + good.length < 0 && !s14LaLaPaRUZaCheck && randomNumber(0, 100) >= 70 && !conjoinedCheck)
         s14LaLaPaRUZa = true;
 }
 function createRunwayDesc(slay, great, good, bad) {
