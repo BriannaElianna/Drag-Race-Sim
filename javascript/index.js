@@ -7756,6 +7756,9 @@ function lsSong() {
     lsSongs.splice(song, 1);
 }
 let allLsSongs = [
+    "Love Me by Madison Beer",
+    "Happiness by Little Mix",
+    "Bloody Marry by Lady Gaga",
     "Supermodel by RuPaul",
     "We Break The Dawn by Michelle Williams",
     "The Greatest Love Of All by Whitney Houston",
@@ -8171,6 +8174,7 @@ class TeamsForChallenges extends Queen {
     }
 }
 let talentsToDo = [
+    "Twerking",
     "Singing",
     "Variety",
     "Dancing",
@@ -8236,6 +8240,7 @@ let reasoningQueens = [
     "they wanted to eliminate them.",
     "the other queen lend them a shirt.",
     "they couldn't send home their friend.",
+    "they started too much shit.",
     "they think that it's better for the group if they are not there.",
     "they were annoyed by the other queen.",
     "they were in the bottom several times.",
@@ -8248,6 +8253,8 @@ let reasoningQueens = [
     "they'll never be glamour.",
     "they were the weakest in the challenge.",
     "they were persuaded by other contestants.",
+    "they really thought that they ate.",
+    "they called out production's BS, so they had to eliminate them.",
     "they are a liar.",
     "no tea, no shade no pink lemonade… they done fucked up drag.",
     "they had given up on the competition."
